@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Advanced modarchive player
 // @namespace    https://github.com/devdmytro/advanced-modarchive-player
-// @version      1.0.1
+// @version      1.0.2
 // @description  Get more convenience from using the modarchive player
 // @author       devdmytro
 // @match        https://modarchive.org/index.php?request=view_player*
