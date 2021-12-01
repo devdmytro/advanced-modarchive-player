@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Advanced modarchive player
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.1
 // @description  Get more convenience from using the modarchive player
 // @author       devdmytro
 // @match        https://modarchive.org/index.php?request=view_player*
@@ -131,7 +131,7 @@
     document.getElementsByClassName('history-window')[0].appendChild(document.createElement('style')).innerHTML = `
     html {
         height: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     body {
         height: 100%;
@@ -158,7 +158,7 @@
     .tracker {
         height: 34px;
     }
-    .tracker:nth-child(2n) { 
+    .tracker:nth-child(2n) {
         background: #a5a5a5;
     }
     .up, .down {
@@ -218,4 +218,6 @@
         if (list.scrollTop + list.clientHeight + 100 >= list.scrollHeight && history_pages * 20 < store.length)
             load_trackers()
     })
+    if (window.outerWidth == 550 && window.outerHeight == 450)
+        window.resizeTo(window.outerWidth, window.outerHeight + 72)
 })()
