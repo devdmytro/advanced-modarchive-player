@@ -26,5 +26,5 @@ Don't you find it uncomfortable, when you're browsing random tracks? You have to
 #### **And more...**
 - Autoplay saves its state even if you close the page or switch to a random tracker
 - Removed redirect from ***Add to My Favourites*** buttion; added ***Delete from my Favourites***
-- Added ***Favourites*** tab for registerd users
+- Added ***Favourites*** tab for registered users
 - Added ***author*** and ***favourites*** fields to track info
