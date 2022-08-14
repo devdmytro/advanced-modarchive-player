@@ -1,7 +1,7 @@
     // ==UserScript==
     // @name         Advanced modarchive player
     // @namespace    http://tampermonkey.net/
-    // @version      1.0.3
+    // @version      1.1.1
     // @description  Get more convenience from using the modarchive player
     // @author       devdmytro
     // @match        https://modarchive.org/index.php?request=view_player*
@@ -194,7 +194,7 @@
                 document.body.removeChild(input)
                 document.getElementById(id).innerHTML = 'Copied!'
                 window.setTimeout(() => {
-                    id.startsWith('cp') ? document.getElementById(id).innerHTML = 'copy' : document.getElementById(id).innerHTML = 'Copy player link'
+                    id.startsWith('cp') ? document.getElementById(id).innerHTML = 'copy' : id == 'playerLink' ? document.getElementById(id).innerHTML = 'Copy player link' : document.getElementById(id).innerHTML = 'Copy discord embed link'
                 }, 2000)
                 return result
             }
@@ -594,6 +594,7 @@
             // Add copy button
             var elem = document.getElementsByTagName('table')[0].children[0].children[0].children[0].children[0]
             elem.innerHTML += `<br><a href="#" onclick="copy(https://modarchive.org/index.php?request=view_player&query=${trackId},'playerLink')"><span><img src="style/images/icons/page_go.png" alt="dl" border="0" class="inline"></span>&nbsp;<span id="playerLink" href="#" onclick="copy('https://modarchive.org/index.php?request=view_player&query=${trackId}','playerLink')" class="copy-link">Copy player link</a></span><br>`
+            elem.innerHTML += `<a href="#" onclick="copy(https://modarchive.org/index.php?request=view_player&query=${trackId},'playerLink')"><span><img src="style/images/icons/page_go.png" alt="dl" border="0" class="inline"></span>&nbsp;<span id="dsLink" href="#" onclick="copy('https://itmod.xyz/${trackId}','dsLink')" class="copy-link">Copy discord embed link</a>`
 
             // History list
             document.getElementsByClassName('player')[0].appendChild(document.createElement('div')).setAttribute('class', 'history-window')
@@ -711,7 +712,7 @@
             td {
                 display: inline-block;
                 width: 100%;
-                height: 60px;
+                height: 84px;
             }
             td > p {
                 padding: 0 15px;
@@ -832,7 +833,7 @@
                         </g>
                     </svg>
                 </a>
-                <small style="position: absolute;margin-top:1px;margin-left:2px;"> - Advanced modarchive player v 1.1</small></div>`
+                <small style="position: absolute;margin-top:1px;margin-left:2px;"> - Advanced modarchive player v 1.1.1</small></div>`
 
             // Scroll events
             var list = document.getElementById('history')
