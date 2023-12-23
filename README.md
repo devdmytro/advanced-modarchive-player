@@ -16,7 +16,7 @@ Now your browser tab changes name according to which track is playing and have n
 <br><br>
 #### **Playlists**
 Could anyone dream of a possibility to create and share playlists? Maybe, but you don't need to anymore, because [AMP](https://github.com/devdmytro/advanced-modarchive-player) already does it.\
-[Check this](https://modarchive.org/index.php?request=view_player&query=193837&playlist=eyJpZCI6MTY0NDMzNzc3NjkzNCwibmFtZSI6IjUgZmF2IHRyYWNrZXJzIiwidGlkcyI6WzE5MzgzNyw1ODI0MCwxNDkyNTIsMTM3Nzk2LDYwMDM0XX0=), after installing\
+[Check this](https://modarchive.org/index.php?request=view_player&query=58240&playlist=eyJpZCI6MTcwMzM2NDcyNTg0MSwibmFtZSI6IkRteSBmYXZzIiwidGlkcyI6WzU4MjQwLDEzNzc5Niw0MTA0MywxNzI0MjQsNDYxODAsMTU5NzgwLDQ3MDg4XX0=), after installing\
 ![playlists](https://nx.wtf/s/APHnZPpjzPAZSto/download?path=&files=playlists.png) ![playlist](https://nx.wtf/s/APHnZPpjzPAZSto/download?path=&files=playlist.png)
 <br><br>
 #### **Copy player link**
